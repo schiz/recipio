@@ -1,0 +1,314 @@
+@font-face {
+    font-family: Helvetica-Neue;
+    src: url('../fonts/HelveticaNeue.ttf');
+}
+
+@font-face {
+    font-family: Helvetica-Neue-Light;
+    src: url('../fonts/HelveticaNeueCyr-UltraLight.otf');
+}
+
+@font-face {
+    font-family: Helvetica-Neue-Heavy;
+    src: url('../fonts/HelveticaNeueCyr-Heavy.otf');
+}
+
+@font-face {
+    font-family: Helvetica-Neue-Thin;
+    src: url('../fonts/HelveticaNeueCyr-Thin.otf');
+}
+
+@font-face {
+    font-family: Helvetica-Neue-Medium;
+    src: url('../fonts/HelveticaNeueCyr-Medium.otf');
+}
+
+@font-face {
+    font-family: Helvetica-Neue-Roman;
+    src: url('../fonts/HelveticaNeueCyr-Roman.otf');
+}
+
+@font-face {
+    font-family: Helvetica-Neue-Black;
+    src: url('../fonts/HelveticaNeueCyr-Black.otf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.mainframe {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica-Neue, Arial, Helvetica, sans-serif;
+    min-width: 1000px;
+}
+
+header {
+    background: url("../images/header-background.jpg") no-repeat center center;
+    background-size: 100% auto;
+    display: block;
+    /*min-width: 1000px;*/
+    position: relative;
+    overflow: hidden;
+}
+
+header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1px;
+    height: 1px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 20px 1px #000;
+}
+
+header .wrapper {
+    width: 840px;
+    margin: 0 auto;
+    min-height: 483px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+header .wrapper .left, header .wrapper .right {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 68px;
+}
+
+header .wrapper .right {
+    float: right;
+    background: url("../images/iphones.png");
+    height: 415px;
+    width: 376px;
+}
+
+header .wrapper .left {
+    float: left;
+    color: #fff;
+    width: 450px;
+}
+
+header .wrapper .left .title {
+    font-family: Helvetica-Neue-Light, Arial, Helvetica, sans-serif;
+    letter-spacing: 6px;
+    font-weight: 100;
+    font-size: 60px;
+    margin-top: -6px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.43);
+}
+
+header .wrapper .left .slogan {
+    font-family: Helvetica-Neue-Medium, Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin-top: 18px;
+    line-height: 39px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.43);
+}
+
+header .wrapper .left .app-button {
+    background: url("../images/app-download.png") no-repeat;
+    width: 295px;
+    height: 47px;
+    margin-top: 13px;
+}
+
+header .wrapper .left .app-button a {
+    width: 295px;
+    height: 47px;
+    display: block;
+}
+
+header .wrapper .left .facebook {
+    margin-top: 63px;
+}
+
+header .wrapper .left .facebook .like, header .wrapper .left .facebook .bubble {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .wrapper .left .facebook .like {
+    background: url("../images/facebook-like.png") no-repeat;
+    width: 48px;
+    height: 20px;
+}
+
+header .wrapper .left .facebook a {
+    display: block;
+    width: 48px;
+    height: 20px;
+}
+
+header .wrapper .left .facebook .bubble {
+    background: url("../images/facebook-bubble.png") no-repeat;
+    width: 37px;
+    height: 18px;
+    color: black;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-top: 2px;
+    margin-top: 1px;
+}
+
+.main {
+    background: #f5f5f5;
+    height: 624px;
+    width: 100%;
+    /*min-width: 980px;*/
+    box-shadow: 0 1px 5px #f5f5f5;
+}
+
+.main .wrapper {
+    width: 840px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.main .wrapper .main-article {
+    margin-top: 75px;
+    display: inline-block;
+    vertical-align: top;
+    width: 242px;
+    margin-right: 56px;
+}
+
+.main .wrapper .hospital {
+    margin-right: 0;
+}
+
+.main .wrapper .main-article .image {
+    width: 242px;
+    height: 242px;
+}
+
+.main .wrapper .doctors .image {
+    background: url("../images/circle-1.png") no-repeat;
+}
+
+.main .wrapper .med-card .image {
+    background: url("../images/circle-2.png") no-repeat;
+}
+
+.main .wrapper .hospital .image {
+    background: url("../images/circle-3.png") no-repeat;
+}
+
+.main .wrapper .main-article .title {
+    font-family: Helvetica-Neue-Roman, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #444753;
+    margin-top: 42px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.main .wrapper .main-article .text {
+    font-size: 14px;
+    color: #444753;
+    margin-top: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 255px;
+    /*min-width: 980px;*/
+}
+
+footer .wrapper {
+    width: 840px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+footer .wrapper .partner-wrapper {
+    margin: 33px auto;
+    margin-bottom: 0;
+    width: 660px;
+}
+
+footer .wrapper .partner-wrapper .partner {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer .wrapper .partner-wrapper .g-booking {
+    background: url("../images/partner-1.png") no-repeat;
+    width: 180px;
+    height: 41px;
+    margin-right: 50px;
+}
+
+footer .wrapper .partner-wrapper .tachos {
+    background: url("../images/partner-2.png") no-repeat;
+    width: 165px;
+    height: 100px;
+    margin-right: 50px;
+}
+
+footer .wrapper .partner-wrapper .laika {
+    background: url("../images/partner-3.png") no-repeat;
+    width: 213px;
+    height: 30px;
+}
+
+footer .wrapper .partner-wrapper a {
+    display: block;
+}
+
+footer .wrapper .partner-wrapper .g-booking a {
+    width: 180px;
+    height: 41px;
+}
+
+footer .wrapper .partner-wrapper .tachos a {
+    width: 165px;
+    height: 100px;
+}
+
+footer .wrapper .partner-wrapper .laika a {
+    width: 213px;
+    height: 30px;
+}
+
+footer .wrapper .contact {
+    font-size: 14px;
+    color: #444753;
+    text-align: center;
+    margin-top: 98px;
+}
+
+footer .wrapper .contact a {
+    color: #23a48a;
+    text-decoration: none;
+}
+
+
+/*Facebook widget*/
+
+.fb-wrapper {
+    width: 840px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.fb-wrapper .fb-like {
+    top: 389px;
+    left: 0;
+    z-index: 50;
+    position: absolute !important;
+}
